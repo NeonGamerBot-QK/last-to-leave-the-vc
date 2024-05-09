@@ -1,4 +1,4 @@
-const { Events } = require("discord.js");
+const { Events, Collection } = require("discord.js");
 
 module.exports = {
     name: Events.InteractionCreate,
@@ -14,7 +14,7 @@ module.exports = {
     const { cooldowns } = interaction.client;
 
 if (!cooldowns.has(command.data.name)) {
-	cooldowns.set(command.data.name, new Collection());
+	cooldowns.set(command.data.name, new Collection ());
 }
 
 const now = Date.now();

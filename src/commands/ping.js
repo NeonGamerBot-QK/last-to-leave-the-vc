@@ -2,8 +2,9 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder().setName('ping').setDescription(`get ping for this bot`).setDMPermission(true),
-    async execute() {
-        const messsage = await interaction.deferReply({
+    async execute(interaction) {
+        const { client } = interaction
+        const message = await interaction.deferReply({
             fetchReply: true
         });
 

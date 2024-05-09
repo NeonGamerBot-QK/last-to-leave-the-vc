@@ -6,10 +6,10 @@ const app = express()
 const http = require('http')
 const { QuickDB } = require('quick.db')
 const client = new discord.Client({
-    intents: [discord.IntentsBitField.Flags.Guilds, discord.IntentsBitField.Flags.GuildVoiceStates, discord.IntentsBitField.Members],
+    intents: [discord.IntentsBitField.Flags.Guilds, discord.IntentsBitField.Flags.GuildVoiceStates, discord.IntentsBitField.Flags.GuildMembers],
     partials: [discord.Partials.GuildMember, discord.Partials.Channel]
 })
-client.server = require('./Modules/Server')(app)
+client.server = require('./modules/Server')(app)
 client.commands = new discord.Collection ();
 client.cooldowns = new discord.Collection ();
 client.db = new QuickDB({ filePath: 'data/data.db'})
