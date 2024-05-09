@@ -9,7 +9,8 @@
     "start": "node .",
     "dev": "nodemon .",
     "scripts:dcmds": "node src/scripts/deploy-commands.js",
-    "scripts:rcmds": "node src/scripts/reset-commands.js"
+    "scripts:rcmds": "node src/scripts/reset-commands.js",
+    "scripts:cmd-docs": "node src/scripts/gen-command-docs.js"
   },
   "engines": {
     "node": ">=20"
