@@ -10,7 +10,8 @@ const client = new discord.Client({
     partials: [discord.Partials.GuildMember, discord.Partials.Channel]
 })
 client.server = require('./Modules/Server')(app)
-client.commands = new Collection();
+client.commands = new discord.Collection ();
+client.cooldowns = new discord.Collection ();
 client.db = new QuickDB({ filePath: 'data/data.db'})
 require('./modules/Commands')(client)
 require('./modules/Events')(client)
