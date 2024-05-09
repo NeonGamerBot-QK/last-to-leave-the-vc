@@ -1,6 +1,6 @@
-require('dotenv').config({ path: require('path').dirname(__dirname) })
+require('dotenv').config({ path: require('path').dirname(__dirname) });
 const { REST, Routes } = require('discord.js');
-const { CLIENT_ID: clientId, GUILD_ID: guildId, DISCORD_TOKEN: token } = process.env
+const { CLIENT_ID: clientId, GUILD_ID: guildId, DISCORD_TOKEN: token } = process.env;
 const commands = [];
 // Construct and prepare an instance of the REST module
 const rest = new REST().setToken(token);
@@ -17,7 +17,8 @@ const rest = new REST().setToken(token);
 		);
 
 		console.log(`Successfully reloaded ${data.length} application (/) commands.`);
-	} catch (error) {
+	}
+	catch (error) {
 		// And of course, make sure you catch and log any errors!
 		console.error(error);
 	}
