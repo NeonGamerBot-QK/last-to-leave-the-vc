@@ -1,10 +1,28 @@
 {
   "name": "last-to-leave-the-vc",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "src/index.js",
   "repository": "https://github.com/NeonGamerBot-QK/last-to-leave-the-vc",
   "author": "Saahil <neon@saahild.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon .", 
+    "scripts:dcmds": "node src/scripts/deploy-commands.js",
+    "scripts:rcmds": "node src/scripts/reset-commands.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "discord-bot",
+    "discord.js",
+    "events",
+    "last-leave-vc",
+    "fun",
+    "discord-voice",
+    "nodejs"
+  ],
   "dependencies": {
     "@discordjs/opus": "^0.9.0",
     "@discordjs/voice": "^0.17.0",
@@ -16,6 +34,7 @@
     "quick.db": "^9.1.7"
   },
   "devDependencies": {
-    "eslint": "^9.2.0"
+    "eslint": "^9.2.0",
+    "nodemon": "^3.1.0"
   }
 }
