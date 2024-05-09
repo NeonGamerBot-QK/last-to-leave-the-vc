@@ -7,10 +7,14 @@ module.exports = {
         const message = await interaction.deferReply({
             fetchReply: true
         });
-
-        const newMessage = `API Latency: ${client.ws.ping}\nClient Ping: ${message.createdTimestamp - interaction.createdTimestamp}`
+const lastVc = interaction.client.last_vc || "(not taken yet)"
+        const newMessage = `> API Latency: \`${client.ws.ping}ms\`\n> Client Ping: \`${message.createdTimestamp - interaction.createdTimestamp}ms\`\n> Last Recorded VC ping: \`${lastVc}ms\``
         await interaction.editReply({
-            content: newMessage
+           embeds: [{
+            description: newMessage,
+            color: 0x00ff00,
+            title: "Pong"
+           }]
         });
     }
 }
