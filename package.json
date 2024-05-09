@@ -1,0 +1,21 @@
+{
+  "name": "last-to-leave-the-vc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/NeonGamerBot-QK/last-to-leave-the-vc",
+  "author": "Saahil <neon@saahild.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/opus": "^0.9.0",
+    "@discordjs/voice": "^0.17.0",
+    "discord.js": "^14.15.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "libsodium-wrappers": "^0.7.13",
+    "quick.db": "^9.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.2.0"
+  }
+}
