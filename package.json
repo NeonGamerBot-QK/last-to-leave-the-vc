@@ -38,6 +38,6 @@
   "devDependencies": {
     "eslint": "8",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.3"
   }
 }
