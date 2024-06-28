@@ -320,10 +320,10 @@ basic-auth@~2.0.1:
   dependencies:
     safe-buffer "5.1.2"
 
-better-sqlite3@^9.6.0:
-  version "9.6.0"
-  resolved "https://registry.yarnpkg.com/better-sqlite3/-/better-sqlite3-9.6.0.tgz#b01e58ba7c48abcdc0383b8301206ee2ab81d271"
-  integrity sha512-yR5HATnqeYNVnkaUTf4bOP2dJSnyhP4puJN/QPRyx4YkBEEUxib422n2XzPqDEHjQQqazoYoADdAm5vE15+dAQ==
+better-sqlite3@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.yarnpkg.com/better-sqlite3/-/better-sqlite3-11.1.1.tgz#dfca2ca6fc7c2d91fd1a275d0c41ddd65ee7ad39"
+  integrity sha512-bAlQQb7gwCgxNpDYafK0O4AaIOiTwA7srfqRtBbw0Nsiq6P+qxEYGl3hLw+9C5jX2FVjKW7oxkSouxlJ+3VX8A==
   dependencies:
     bindings "^1.5.0"
     prebuild-install "^7.1.1"
